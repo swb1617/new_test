@@ -92,7 +92,8 @@ class test_DATA(unittest.TestCase):
         Data.GetDataMenuToSaveMyLine(self).click()
         time.sleep(3)
         Data.GetDataBack(self).click()
-    @unittest.skip
+
+    @unittest.skip("部分手机保存活动不同")
     def test_ExportData(self):
         Tap.GetToHome(self).click()
         Menu.GetMenuFirstData(self).click()
@@ -101,7 +102,7 @@ class test_DATA(unittest.TestCase):
         Data.GetDataMenuToExportFile(self).click()
         Data.GetDataExportDataTcx(self).click()
         Data.GetDataExportDataDowload(self).click()
-        Data.GetDataExportDataSave(self).click()
+        Data.GetDataExportDataSave(self).click()  #荣耀手机的view
         time.sleep(3)
         Data.GetDataExportDataBack(self).click()
         Data.GetDataBack(self).click()
@@ -116,14 +117,15 @@ class test_DATA(unittest.TestCase):
         Data.GetDataEditSave(self).click()
         Data.GetDataBack(self).click()
 
-    # def test_DeleteData(self):
-    #     Tap.GetToHome(self).click()
-    #     Menu.GetMenuFirstData(self).click()
-    #     time.sleep(3)
-    #     Data.GetDataMenuInfo(self).click()
-    #     Data.GetDataMenuToDeleteData(self).click()
-    #     Data.GetDataDeleteDataOk(self).click()
-    #     time.sleep(3)
+    @unittest.skip("删除数据")
+    def test_DeleteData(self):
+        Tap.GetToHome(self).click()
+        Menu.GetMenuFirstData(self).click()
+        time.sleep(3)
+        Data.GetDataMenuInfo(self).click()
+        Data.GetDataMenuToDeleteData(self).click()
+        Data.GetDataDeleteDataOk(self).click()
+        time.sleep(3)
 
     def test_ShareWatermark(self):
         Tap.GetToHome(self).click()
@@ -216,7 +218,7 @@ class test_DATA(unittest.TestCase):
         Activity.GetActivityCalendarBack(self).click()
 
     @unittest.skip("compose测试")
-    def test_composetest(self):
+    def test_ComposeTest(self):
         Tap.GetToDevice(self).click()
         Compose.GetDeviceRoutesAdd(self).click()
         time.sleep(3)
