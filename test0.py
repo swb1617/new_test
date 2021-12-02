@@ -244,7 +244,6 @@ class test_DATA(unittest.TestCase):
         Me.GetMeUserGoalsSave(self).click()
         Me.GetMeUserDetailsBack(self).click()
 
-
     def testLanguageChange(self):
         Tap.GetToMe(self).click()
         Me.GetMeAccountSettingInfo(self).click()
@@ -258,9 +257,7 @@ class test_DATA(unittest.TestCase):
         Me.GetMeAccountSettingInfo(self).click()
         NewLanguage = Me.GetMeLanguageMessage(self).text
         Me.GetMeAccountSettingBack(self).click()
-        self.assertNotEqual(OldLanguage,NewLanguage)
-
-
+        self.assertNotEqual(OldLanguage, NewLanguage)
 
 
 if __name__ == '__main__':
