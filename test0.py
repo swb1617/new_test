@@ -92,7 +92,7 @@ class test_DATA(unittest.TestCase):
         Data.GetDataMenuToSaveMyLine(self).click()
         time.sleep(3)
         Data.GetDataBack(self).click()
-
+    @unittest.skip
     def test_ExportData(self):
         Tap.GetToHome(self).click()
         Menu.GetMenuFirstData(self).click()
@@ -186,7 +186,7 @@ class test_DATA(unittest.TestCase):
         time.sleep(3)
         Me.GetMeAboutUsBack(self).click()
 
-    def test_FeedBSack(self):
+    def test_FeedBack(self):
         QuestionName = 'test'
         Tap.GetToMe(self).click()
         Me.GetMeAfterSaleServiceInfo(self).click()
@@ -258,6 +258,12 @@ class test_DATA(unittest.TestCase):
         NewLanguage = Me.GetMeLanguageMessage(self).text
         Me.GetMeAccountSettingBack(self).click()
         self.assertNotEqual(OldLanguage, NewLanguage)
+
+    def testMeNotification(self):
+        Tap.GetToMe(self).click()
+        Me.GetMeNotification(self).click()
+        time.sleep(3)
+        Me.GetMeNotificationBack(self).click()
 
 
 if __name__ == '__main__':
