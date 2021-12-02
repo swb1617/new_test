@@ -1018,6 +1018,20 @@ class Me:
                                                                            "3]/android.widget.RelativeLayout[2]")
         return MeAccountSettingInfo
 
+    def GetMeLanguageMessage(self):
+        MeLanguageMessage = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/android.widget.RelativeLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.RelativeLayout["
+                                                                        "1]/android.widget.TextView[2]")
+        return MeLanguageMessage
+
     def GetMeRidingRankInfo(self):
         MeRidingRankInfo = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
                                                                        "1]/android.widget.LinearLayout["

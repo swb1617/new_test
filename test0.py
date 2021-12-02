@@ -35,23 +35,23 @@ class test_DATA(unittest.TestCase):
         }
         cls.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 
-    def swipe_down(self):  # 定义下滑动方法
-        size = self.driver.get_window_size()  # 获取手机屏幕尺寸
+    def SwipeDown(self):  # 定义下滑动方法
+        size = self.driver.get_window_size()
         width = size['width']
         height = size['height']
         x1 = x2 = width * 0.5
-        y1, y2 = height * 0.25, height * 0.75
+        y1, y2 = height * 0.35, height * 0.7
         time.sleep(3)
-        self.driver.swipe(x1, y1, x2, y2, 1500)  # 滑动方法
+        self.driver.swipe(x1, y1, x2, y2, 1000)
 
-    def swipe_up(self):  # 定义下滑动方法
+    def SwipeUp(self):  # 定义上滑动方法
         size = self.driver.get_window_size()  # 获取手机屏幕尺寸
         width = size['width']
         height = size['height']
         x1 = x2 = width * 0.5
-        y1, y2 = height * 0.6, height * 0.3
+        y1, y2 = height * 0.89, height * 0.86
         time.sleep(3)
-        self.driver.swipe(x1, y1, x2, y2, 1500)  # 滑动方法
+        self.driver.swipe(x1, y1, x2, y2, 1000)  # 滑动方法
 
     def test_MenuMessage(self):
         Tap.GetToHome(self).click()
@@ -151,7 +151,7 @@ class test_DATA(unittest.TestCase):
         Activity.GetActivityShareSave(self).click()
         Activity.GetActivityShareBack(self).click()
 
-    def test_Statisic(self):
+    def test_StatisicData(self):
         Tap.GetToActivity(self).click()
         Activity.GetActivityDataStatisicInfo(self).click()
         time.sleep(1)
@@ -224,13 +224,43 @@ class test_DATA(unittest.TestCase):
         Compose.GetDeviceFirstRoutes(self).click()
 
     def test_MenuChangeGoals(self):
+        MonthlyGoals = 888
         Tap.GetToHome(self).click()
         Menu.GetMenuTrainingGoalsInto(self).click()
         Me.GetMeUserGoalsText(self).click()
         Me.GetMeUserGoalsText(self).clear()
-        Me.GetMeUserGoalsText(self).send_keys(520)  #id定位
+        Me.GetMeUserGoalsText(self).send_keys(MonthlyGoals)  # id定位
         Me.GetMeUserGoalsSave(self).click()
         Me.GetMeUserDetailsBack(self).click()
+
+    def test_MeChangeGoals(self):
+        MonthlyGoals = 666
+        Tap.GetToMe(self).click()
+        Me.GetMEUserDetailsInfo(self).click()
+        Me.GetMeUserGoalsEdit(self).click()
+        Me.GetMeUserGoalsText(self).click()
+        Me.GetMeUserGoalsText(self).clear()
+        Me.GetMeUserGoalsText(self).send_keys(MonthlyGoals)  # id定位
+        Me.GetMeUserGoalsSave(self).click()
+        Me.GetMeUserDetailsBack(self).click()
+
+
+    def testLanguageChange(self):
+        Tap.GetToMe(self).click()
+        Me.GetMeAccountSettingInfo(self).click()
+        OldLanguage = Me.GetMeLanguageMessage(self).text
+        Me.GetMeLanguageSetting(self).click()
+        self.SwipeUp()
+        time.sleep(1)
+        Me.GetMeLanguageSettingSave(self).click()
+        Me.GetMeAccountSettingSave(self).click()
+        Tap.GetToMe(self).click()
+        Me.GetMeAccountSettingInfo(self).click()
+        NewLanguage = Me.GetMeLanguageMessage(self).text
+        Me.GetMeAccountSettingBack(self).click()
+        self.assertNotEqual(OldLanguage,NewLanguage)
+
+
 
 
 if __name__ == '__main__':
