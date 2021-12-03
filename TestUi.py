@@ -9,7 +9,7 @@ from button import *
 from appium import webdriver
 
 
-class test_DATA(unittest.TestCase):
+class test_UI(unittest.TestCase):
 
     def setUp(self) -> None:  # 执行方法前准备工作
         self.driver.implicitly_wait(15)  # 稳定元素
@@ -41,16 +41,25 @@ class test_DATA(unittest.TestCase):
         height = size['height']
         x1 = x2 = width * 0.5
         y1, y2 = height * 0.35, height * 0.7
-        time.sleep(3)
+        time.sleep(2)
         self.driver.swipe(x1, y1, x2, y2, 1000)
 
-    def SwipeUp(self):  # 定义上滑动方法
+    def SwipeLittleUp(self):  # 定义上滑动方法
         size = self.driver.get_window_size()  # 获取手机屏幕尺寸
         width = size['width']
         height = size['height']
         x1 = x2 = width * 0.5
         y1, y2 = height * 0.89, height * 0.86
-        time.sleep(3)
+        time.sleep(2)
+        self.driver.swipe(x1, y1, x2, y2, 1000)  # 滑动方法
+
+    def SwipeLittleDown(self):  # 定义上滑动方法
+        size = self.driver.get_window_size()  # 获取手机屏幕尺寸
+        width = size['width']
+        height = size['height']
+        x1 = x2 = width * 0.5
+        y1, y2 = height * 0.9, height * 0.95
+        time.sleep(2)
         self.driver.swipe(x1, y1, x2, y2, 1000)  # 滑动方法
 
     def test_MenuMessage(self):
@@ -242,9 +251,8 @@ class test_DATA(unittest.TestCase):
         Me.GetMeUserGoalsSave(self).click()
         Me.GetMeUserDetailsBack(self).click()
         NewGoals = Menu.GetMenuMonthGoals(self).text
-        RealGoals = OldGoals - NewGoals
-        print(RealGoals)
-        # self.assertEqual()
+        RealGoals = round(float(OldGoals)) - round(float(NewGoals))
+        self.assertEqual(0,RealGoals)
 
     def test_MeChangeGoals(self):
         MonthlyGoals = 666
@@ -257,11 +265,36 @@ class test_DATA(unittest.TestCase):
         Me.GetMeUserGoalsSave(self).click()
         Me.GetMeUserDetailsBack(self).click()
 
+    def test_SexChange(self):
+        Tap.GetToMe(self).click()
+        Me.GetMEUserDetailsInfo(self).click()
+        UesrSex = Me.GetMeUserSex(self).text
+        if UesrSex == '男':
+            Me.GetMeUserSexInfo(self).click()
+            self.SwipeLittleUp()
+            Me.GetMeUserSexSave(self).click()
+            Me.GetMeUserDetailsBack(self).click()
+            Tap.GetToMe(self).click()
+            Me.GetMEUserDetailsInfo(self).click()
+            Sex = Me.GetMeUserSex(self).text
+            self.assertNotEqual(Sex,UesrSex)
+            Me.GetMeUserDetailsBack(self).click()
+        else:
+            Me.GetMeUserSexInfo(self).click()
+            self.SwipeLittleDown()
+            Me.GetMeUserSexSave(self).click()
+            Me.GetMeUserDetailsBack(self).click()
+            Tap.GetToMe(self).click()
+            Me.GetMEUserDetailsInfo(self).click()
+            Sex = Me.GetMeUserSex(self).text
+            self.assertNotEqual(Sex, UesrSex)
+            Me.GetMeUserDetailsBack(self).click()
+
     def test_LanguageChange(self):
         Tap.GetToMe(self).click()
         Me.GetMeAccountSettingInfo(self).click()
         Me.GetMeLanguageSetting(self).click()
-        self.SwipeUp()
+        self.SwipeLittleUp()
         time.sleep(1)
         Me.GetMeLanguageSettingSave(self).click()
         OldLanguage = Me.GetMeLanguageMessage(self).text
