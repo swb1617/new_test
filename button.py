@@ -611,16 +611,15 @@ class Data:
         DataExportDataSave = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
                                                                          "1]/android.widget.FrameLayout["
                                                                          "1]/android.widget.FrameLayout["
-                                                                         "1]/android.widget.RelativeLayout["
-                                                                         "1]/androidx.drawerlayout.widget"
-                                                                         ".DrawerLayout["
+                                                                         "1]/android.view.ViewGroup["
+                                                                         "1]/android.support.v4.widget.DrawerLayout["
                                                                          "1]/android.widget.LinearLayout["
                                                                          "1]/android.widget.FrameLayout["
                                                                          "1]/android.widget.LinearLayout["
                                                                          "1]/android.widget.FrameLayout["
                                                                          "2]/android.widget.LinearLayout["
                                                                          "1]/android.widget.FrameLayout["
-                                                                         "2]/android.widget.Button[1]")
+                                                                         "2]/android.widget.TextView[1]")
         return DataExportDataSave
 
     def GetDataDeleteDataOk(self):
@@ -1207,6 +1206,18 @@ class Me:
         MeFeedBackQuestionText = self.driver.find_element(by=By.ID, value="com.igpsport.globalapp:id/etProblem")
         return MeFeedBackQuestionText
 
+    def GetMeFeedBackPictureAdd(self):
+        MeFeddbackPictureAdd = self.driver.find_element(by=By.XPATH,value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[1]")
+        return MeFeddbackPictureAdd
+
+    def GetMeFeedBackPictureChoose(self):
+        MeFeedBackPictureChoose = self.driver.find_element(by=By.XPATH,value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[2]/android.widget.TextView[1]")
+        return MeFeedBackPictureChoose
+
+    def GetMeFeedBackPictureSave(self):
+        MeFeedBackPictureSave = self.driver.find_element(by=By.XPATH,value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.TextView[3]")
+        return MeFeedBackPictureSave
+
     def GetMeFeedBackTLEText(self):
         MeFeedBackTLEText = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
                                                                         "1]/android.widget.LinearLayout["
@@ -1276,18 +1287,98 @@ class Me:
         return MeLanguageSettingSave
 
 
-class Compose:
+class ComposeTest:
     def GetDeviceRoutesAdd(self):
         DeviceRoutesAdd = self.driver.find_element(by=By.XPATH,
-                                                   value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.LinearLayout[4]")
+                                                   value="//android.widget.FrameLayout["
+                                                         "1]/android.widget.LinearLayout["
+                                                         "1]/android.widget.FrameLayout["
+                                                         "1]/android.widget.LinearLayout["
+                                                         "1]/android.widget.FrameLayout["
+                                                         "1]/android.widget.LinearLayout["
+                                                         "1]/android.widget.FrameLayout["
+                                                         "1]/android.widget.LinearLayout["
+                                                         "1]/android.widget.ScrollView["
+                                                         "1]/android.widget.LinearLayout["
+                                                         "1]/androidx.recyclerview.widget.RecyclerView["
+                                                         "1]/android.widget.LinearLayout[4]")
         return DeviceRoutesAdd
 
     def GetDeviceCreateRoutes(self):
         DeviceCreateRoutes = self.driver.find_element(by=By.XPATH,
-                                                      value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/androidx.compose.ui.platform.ComposeView[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]")
+                                                      value="//android.widget.FrameLayout["
+                                                            "1]/android.widget.LinearLayout["
+                                                            "1]/android.widget.FrameLayout["
+                                                            "1]/android.widget.LinearLayout["
+                                                            "1]/android.widget.FrameLayout["
+                                                            "1]/androidx.compose.ui.platform.ComposeView["
+                                                            "1]/android.view.View[1]/android.view.View["
+                                                            "2]/android.view.View[1]")
         return DeviceCreateRoutes
 
     def GetDeviceFirstRoutes(self):
         DeviceFirstRoutes = self.driver.find_element(by=By.XPATH,
-                                                     value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/androidx.compose.ui.platform.ComposeView[1]/android.view.View[1]/android.view.View[4]/android.view.View[1]/android.view.View[1]/android.view.View[1]")
+                                                     value="//android.widget.FrameLayout["
+                                                           "1]/android.widget.LinearLayout["
+                                                           "1]/android.widget.FrameLayout["
+                                                           "1]/android.widget.LinearLayout["
+                                                           "1]/android.widget.FrameLayout["
+                                                           "1]/androidx.compose.ui.platform.ComposeView["
+                                                           "1]/android.view.View[1]/android.view.View["
+                                                           "4]/android.view.View[1]/android.view.View["
+                                                           "1]/android.view.View[1]")
         return DeviceFirstRoutes
+
+
+class ErrorHappen:
+    def GetDataNetError(self):
+        DataNetError = self.driver.find_element(by=By.XPATH,
+                                                value="//android.widget.FrameLayout[1]/android.widget.LinearLayout["
+                                                      "1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]")
+        return DataNetError
+
+    def GetDataNetErrorOk(self):
+        DataNetErrorOk = self.driver.find_element(by=By.XPATH,
+                                                  value="//android.widget.FrameLayout[1]/android.widget.LinearLayout["
+                                                        "1]/android.widget.FrameLayout[1]/android.widget.FrameLayout["
+                                                        "1]/android.view.ViewGroup[1]/android.widget.Button[1]")
+        return DataNetErrorOk
+
+    def GetDataError(self):
+        DataError = self.driver.find_element(by=By.XPATH,
+                                             value="//android.widget.FrameLayout[1]/android.widget.LinearLayout["
+                                                   "1]/android.widget.FrameLayout[1]/android.widget.LinearLayout["
+                                                   "1]/android.widget.FrameLayout[1]/android.widget.FrameLayout["
+                                                   "1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout["
+                                                   "1]/android.widget.ScrollView[2]/android.widget.LinearLayout["
+                                                   "1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]")
+        return DataError
+
+    def GetDataErrorLayout(self):
+        DataErrorLayout = self.driver.find_element(by=By.XPATH,
+                                                   value="//android.widget.FrameLayout[1]/android.widget.FrameLayout["
+                                                         "1]/android.widget.FrameLayout["
+                                                         "1]/android.widget.FrameLayout["
+                                                         "1]/android.widget.LinearLayout[1]")
+        return DataErrorLayout
+
+    def GetDataErrorFeedBack(self):
+        DataErrorFeedback = self.driver.find_element(by=By.XPATH,value="//android.widget.FrameLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.TextView[1]")
+        return DataErrorFeedback
+
+    def GetDataErrorOk(self):
+        DataErrorOk = self.driver.find_element(by=By.XPATH,value="//android.widget.FrameLayout["
+                                                                 "1]/android.widget.FrameLayout["
+                                                                 "1]/android.widget.FrameLayout["
+                                                                 "1]/android.widget.FrameLayout["
+                                                                 "1]/android.widget.LinearLayout["
+                                                                 "1]/android.widget.LinearLayout["
+                                                                 "1]/android.widget.TextView[2]")
+        return DataErrorOk
+

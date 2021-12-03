@@ -102,7 +102,7 @@ class test_DATA(unittest.TestCase):
         Data.GetDataMenuToExportFile(self).click()
         Data.GetDataExportDataTcx(self).click()
         Data.GetDataExportDataDowload(self).click()
-        Data.GetDataExportDataSave(self).click()  #荣耀手机的view
+        Data.GetDataExportDataSave(self).click()  # 荣耀手机的view
         time.sleep(3)
         Data.GetDataExportDataBack(self).click()
         Data.GetDataBack(self).click()
@@ -188,7 +188,7 @@ class test_DATA(unittest.TestCase):
         time.sleep(3)
         Me.GetMeAboutUsBack(self).click()
 
-    def test_FeedBack(self):
+    def FeedBack(self):
         QuestionName = 'test'
         Tap.GetToMe(self).click()
         Me.GetMeAfterSaleServiceInfo(self).click()
