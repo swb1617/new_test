@@ -48,7 +48,7 @@ class test_UI(unittest.TestCase):
         size = self.driver.get_window_size()  # 获取手机屏幕尺寸
         width = size['width']
         height = size['height']
-        x1 = x2 = width * 0.5
+        x1 = x2 = width * 0.7
         y1, y2 = height * 0.89, height * 0.86
         time.sleep(2)
         self.driver.swipe(x1, y1, x2, y2, 1000)  # 滑动方法
@@ -57,7 +57,7 @@ class test_UI(unittest.TestCase):
         size = self.driver.get_window_size()  # 获取手机屏幕尺寸
         width = size['width']
         height = size['height']
-        x1 = x2 = width * 0.5
+        x1 = x2 = width * 0.7
         y1, y2 = height * 0.9, height * 0.95
         time.sleep(2)
         self.driver.swipe(x1, y1, x2, y2, 1000)  # 滑动方法
@@ -102,7 +102,6 @@ class test_UI(unittest.TestCase):
         time.sleep(3)
         Data.GetDataBack(self).click()
 
-    @unittest.skip("部分手机保存活动不同")
     def test_ExportData(self):
         Tap.GetToHome(self).click()
         Menu.GetMenuFirstData(self).click()
@@ -252,7 +251,7 @@ class test_UI(unittest.TestCase):
         Me.GetMeUserDetailsBack(self).click()
         NewGoals = Menu.GetMenuMonthGoals(self).text
         RealGoals = round(float(OldGoals)) - round(float(NewGoals))
-        self.assertEqual(0,RealGoals)
+        self.assertEqual(0, RealGoals)
 
     def test_MeChangeGoals(self):
         MonthlyGoals = 666
@@ -271,13 +270,14 @@ class test_UI(unittest.TestCase):
         UesrSex = Me.GetMeUserSex(self).text
         if UesrSex == '男':
             Me.GetMeUserSexInfo(self).click()
+            time.sleep(1)
             self.SwipeLittleUp()
             Me.GetMeUserSexSave(self).click()
             Me.GetMeUserDetailsBack(self).click()
             Tap.GetToMe(self).click()
             Me.GetMEUserDetailsInfo(self).click()
             Sex = Me.GetMeUserSex(self).text
-            self.assertNotEqual(Sex,UesrSex)
+            self.assertNotEqual(Sex, UesrSex)
             Me.GetMeUserDetailsBack(self).click()
         else:
             Me.GetMeUserSexInfo(self).click()
@@ -293,6 +293,7 @@ class test_UI(unittest.TestCase):
     def test_LanguageChange(self):
         Tap.GetToMe(self).click()
         Me.GetMeAccountSettingInfo(self).click()
+        time.sleep(1)
         Me.GetMeLanguageSetting(self).click()
         self.SwipeLittleUp()
         time.sleep(1)
