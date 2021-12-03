@@ -116,14 +116,15 @@ class test_DATA(unittest.TestCase):
         Data.GetDataEditSave(self).click()
         Data.GetDataBack(self).click()
 
-    # def test_DeleteData(self):
-    #     Tap.GetToHome(self).click()
-    #     Menu.GetMenuFirstData(self).click()
-    #     time.sleep(3)
-    #     Data.GetDataMenuInfo(self).click()
-    #     Data.GetDataMenuToDeleteData(self).click()
-    #     Data.GetDataDeleteDataOk(self).click()
-    #     time.sleep(3)
+    @unittest.skip("删除数据")
+    def test_DeleteData(self):
+        Tap.GetToHome(self).click()
+        Menu.GetMenuFirstData(self).click()
+        time.sleep(3)
+        Data.GetDataMenuInfo(self).click()
+        Data.GetDataMenuToDeleteData(self).click()
+        Data.GetDataDeleteDataOk(self).click()
+        time.sleep(3)
 
     def test_ShareWatermark(self):
         Tap.GetToHome(self).click()
