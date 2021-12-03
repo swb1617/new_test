@@ -234,12 +234,17 @@ class test_DATA(unittest.TestCase):
     def test_MenuChangeGoals(self):
         MonthlyGoals = 888
         Tap.GetToHome(self).click()
+        OldGoals = Menu.GetMenuMonthGoals(self).text
         Menu.GetMenuTrainingGoalsInto(self).click()
         Me.GetMeUserGoalsText(self).click()
         Me.GetMeUserGoalsText(self).clear()
         Me.GetMeUserGoalsText(self).send_keys(MonthlyGoals)  # id定位
         Me.GetMeUserGoalsSave(self).click()
         Me.GetMeUserDetailsBack(self).click()
+        NewGoals = Menu.GetMenuMonthGoals(self).text
+        RealGoals = OldGoals - NewGoals
+        print(RealGoals)
+        # self.assertEqual()
 
     def test_MeChangeGoals(self):
         MonthlyGoals = 666
@@ -252,7 +257,7 @@ class test_DATA(unittest.TestCase):
         Me.GetMeUserGoalsSave(self).click()
         Me.GetMeUserDetailsBack(self).click()
 
-    def testLanguageChange(self):
+    def test_LanguageChange(self):
         Tap.GetToMe(self).click()
         Me.GetMeAccountSettingInfo(self).click()
         Me.GetMeLanguageSetting(self).click()
@@ -267,7 +272,7 @@ class test_DATA(unittest.TestCase):
         Me.GetMeAccountSettingBack(self).click()
         self.assertEqual(OldLanguage, NewLanguage)
 
-    def testMeNotification(self):
+    def test_MeNotification(self):
         Tap.GetToMe(self).click()
         Me.GetMeNotification(self).click()
         time.sleep(3)

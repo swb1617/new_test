@@ -926,6 +926,43 @@ class Me:
                                                                         "1]/android.widget.LinearLayout[1]")
         return MeUserDetailsInfo
 
+    def GetMeUserSex(self):
+        MeUserSex = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                "1]/android.widget.LinearLayout["
+                                                                "1]/android.widget.FrameLayout["
+                                                                "1]/android.widget.LinearLayout["
+                                                                "1]/android.widget.FrameLayout["
+                                                                "1]/android.widget.FrameLayout["
+                                                                "1]/android.widget.LinearLayout["
+                                                                "1]/android.widget.ScrollView["
+                                                                "1]/android.widget.LinearLayout["
+                                                                "1]/android.widget.RelativeLayout["
+                                                                "3]/android.widget.LinearLayout["
+                                                                "1]/android.widget.TextView[1]")
+        return MeUserSex
+
+    def GetMeUserSexInfo(self):
+        MeUserSexInfo = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                    "1]/android.widget.LinearLayout["
+                                                                    "1]/android.widget.FrameLayout["
+                                                                    "1]/android.widget.LinearLayout["
+                                                                    "1]/android.widget.FrameLayout["
+                                                                    "1]/android.widget.FrameLayout["
+                                                                    "1]/android.widget.LinearLayout["
+                                                                    "1]/android.widget.ScrollView["
+                                                                    "1]/android.widget.LinearLayout["
+                                                                    "1]/android.widget.RelativeLayout[3]")
+        return MeUserSexInfo
+
+    def GetMeUserSexSave(self):
+        MeUserSexSave = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                    "1]/android.widget.FrameLayout["
+                                                                    "1]/android.widget.FrameLayout["
+                                                                    "1]/android.widget.LinearLayout["
+                                                                    "1]/android.widget.RelativeLayout["
+                                                                    "1]/android.widget.Button[2]")
+        return MeUserSexSave
+
     def GetMeSettingHRInfo(self):
         MeSettingHRInfo = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
                                                                       "1]/android.widget.LinearLayout["
@@ -1047,6 +1084,17 @@ class Me:
                                                                        "1]/android.widget.LinearLayout["
                                                                        "3]/android.widget.RelativeLayout[3]")
         return MeRidingRankInfo
+
+    def GetMeRidingRankBack(self):
+        MeRidingRankBack = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.RelativeLayout["
+                                                                       "1]/android.widget.LinearLayout[1]")
+        return MeRidingRankBack
 
     def GetMeAfterSaleServiceInfo(self):
         MeAfterSaleServiceInfo = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
@@ -1207,15 +1255,36 @@ class Me:
         return MeFeedBackQuestionText
 
     def GetMeFeedBackPictureAdd(self):
-        MeFeddbackPictureAdd = self.driver.find_element(by=By.XPATH,value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[1]")
+        MeFeddbackPictureAdd = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                           "1]/android.widget.LinearLayout["
+                                                                           "1]/android.widget.FrameLayout["
+                                                                           "1]/android.widget.LinearLayout["
+                                                                           "1]/android.widget.FrameLayout["
+                                                                           "1]/android.widget.LinearLayout["
+                                                                           "1]/android.widget.ScrollView["
+                                                                           "1]/android.widget.LinearLayout["
+                                                                           "1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[1]")
         return MeFeddbackPictureAdd
 
     def GetMeFeedBackPictureChoose(self):
-        MeFeedBackPictureChoose = self.driver.find_element(by=By.XPATH,value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[2]/android.widget.TextView[1]")
+        MeFeedBackPictureChoose = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                              "1]/android.widget.LinearLayout["
+                                                                              "1]/android.widget.FrameLayout["
+                                                                              "1]/android.widget.LinearLayout["
+                                                                              "1]/android.widget.FrameLayout["
+                                                                              "1]/android.widget.RelativeLayout["
+                                                                              "1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[2]/android.widget.TextView[1]")
         return MeFeedBackPictureChoose
 
     def GetMeFeedBackPictureSave(self):
-        MeFeedBackPictureSave = self.driver.find_element(by=By.XPATH,value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.TextView[3]")
+        MeFeedBackPictureSave = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                            "1]/android.widget.LinearLayout["
+                                                                            "1]/android.widget.FrameLayout["
+                                                                            "1]/android.widget.LinearLayout["
+                                                                            "1]/android.widget.FrameLayout["
+                                                                            "1]/android.widget.RelativeLayout["
+                                                                            "1]/android.widget.RelativeLayout["
+                                                                            "2]/android.widget.TextView[3]")
         return MeFeedBackPictureSave
 
     def GetMeFeedBackTLEText(self):
@@ -1363,22 +1432,21 @@ class ErrorHappen:
         return DataErrorLayout
 
     def GetDataErrorFeedBack(self):
-        DataErrorFeedback = self.driver.find_element(by=By.XPATH,value="//android.widget.FrameLayout["
-                                                                       "1]/android.widget.FrameLayout["
-                                                                       "1]/android.widget.FrameLayout["
-                                                                       "1]/android.widget.FrameLayout["
-                                                                       "1]/android.widget.LinearLayout["
-                                                                       "1]/android.widget.LinearLayout["
-                                                                       "1]/android.widget.TextView[1]")
+        DataErrorFeedback = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.TextView[1]")
         return DataErrorFeedback
 
     def GetDataErrorOk(self):
-        DataErrorOk = self.driver.find_element(by=By.XPATH,value="//android.widget.FrameLayout["
-                                                                 "1]/android.widget.FrameLayout["
-                                                                 "1]/android.widget.FrameLayout["
-                                                                 "1]/android.widget.FrameLayout["
-                                                                 "1]/android.widget.LinearLayout["
-                                                                 "1]/android.widget.LinearLayout["
-                                                                 "1]/android.widget.TextView[2]")
+        DataErrorOk = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                  "1]/android.widget.FrameLayout["
+                                                                  "1]/android.widget.FrameLayout["
+                                                                  "1]/android.widget.FrameLayout["
+                                                                  "1]/android.widget.LinearLayout["
+                                                                  "1]/android.widget.LinearLayout["
+                                                                  "1]/android.widget.TextView[2]")
         return DataErrorOk
-
