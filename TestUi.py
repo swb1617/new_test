@@ -188,7 +188,7 @@ class test_DATA(unittest.TestCase):
         time.sleep(3)
         Me.GetMeAboutUsBack(self).click()
 
-    def FeedBack(self):
+    def test_FeedBack(self):
         QuestionName = 'test'
         Tap.GetToMe(self).click()
         Me.GetMeAfterSaleServiceInfo(self).click()
@@ -199,14 +199,20 @@ class test_DATA(unittest.TestCase):
         Me.GetMeFeedBackQuestionList(self).click()
         Me.GetMeFeedBackQuestionText(self).click()
         Me.GetMeFeedBackQuestionText(self).send_keys(QuestionName)
-        time.sleep(2)
+        time.sleep(1)
         Me.GetMeFeedBackTLEText(self).send_keys(123456)
+        time.sleep(1)
+        Me.GetMeFeedBackPictureAdd(self).click()
+        time.sleep(1)
+        Me.GetMeFeedBackPictureChoose(self).click()
+        time.sleep(1)
+        Me.GetMeFeedBackPictureSave(self).click()
         time.sleep(1)
         Me.GetMeFeedBackSubmit(self).click()
         time.sleep(1)
         Me.GetMeAfterSaleServiceBack(self).click()
 
-    def test_acc(self):
+    def test_ActivityChangeGoals(self):
         MonthlyGoals = 520
         Tap.GetToActivity(self).click()
         Activity.GetActivityCalendarInfo(self).click()
@@ -220,10 +226,10 @@ class test_DATA(unittest.TestCase):
     @unittest.skip("compose测试")
     def test_ComposeTest(self):
         Tap.GetToDevice(self).click()
-        Compose.GetDeviceRoutesAdd(self).click()
+        ComposeTest.GetDeviceRoutesAdd(self).click()
         time.sleep(3)
         # Compose.GetDeviceCreateRoutes(self).click()
-        Compose.GetDeviceFirstRoutes(self).click()
+        ComposeTest.GetDeviceFirstRoutes(self).click()
 
     def test_MenuChangeGoals(self):
         MonthlyGoals = 888
@@ -249,17 +255,17 @@ class test_DATA(unittest.TestCase):
     def testLanguageChange(self):
         Tap.GetToMe(self).click()
         Me.GetMeAccountSettingInfo(self).click()
-        OldLanguage = Me.GetMeLanguageMessage(self).text
         Me.GetMeLanguageSetting(self).click()
         self.SwipeUp()
         time.sleep(1)
         Me.GetMeLanguageSettingSave(self).click()
+        OldLanguage = Me.GetMeLanguageMessage(self).text
         Me.GetMeAccountSettingSave(self).click()
         Tap.GetToMe(self).click()
         Me.GetMeAccountSettingInfo(self).click()
         NewLanguage = Me.GetMeLanguageMessage(self).text
         Me.GetMeAccountSettingBack(self).click()
-        self.assertNotEqual(OldLanguage, NewLanguage)
+        self.assertEqual(OldLanguage, NewLanguage)
 
     def testMeNotification(self):
         Tap.GetToMe(self).click()
