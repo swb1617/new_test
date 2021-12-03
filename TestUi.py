@@ -7,6 +7,7 @@ import time
 import unittest
 from button import *
 from appium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 class test_UI(unittest.TestCase):
@@ -62,6 +63,12 @@ class test_UI(unittest.TestCase):
         time.sleep(2)
         self.driver.swipe(x1, y1, x2, y2, 1000)  # 滑动方法
 
+    def GetToast(self,toast_message):
+        message = '//*[@text=\'{}\']'.format(toast_message)
+        toast_element = WebDriverWait(self.driver, 5).until(lambda x: x.find_element(by=By.XPATH, value=message))
+        # print(toast_element.text)
+        assert toast_element.text == toast_message
+
     def test_MenuMessage(self):
         Tap.GetToHome(self).click()
         Menu.GetMenuMessageInto(self).click()
@@ -96,9 +103,10 @@ class test_UI(unittest.TestCase):
     def test_SaveMyLine(self):
         Tap.GetToHome(self).click()
         Menu.GetMenuFirstData(self).click()
-        time.sleep(3)
+        time.sleep(4)
         Data.GetDataMenuInfo(self).click()
         Data.GetDataMenuToSaveMyLine(self).click()
+        # self.GetToast("保存成功！")
         time.sleep(3)
         Data.GetDataBack(self).click()
 
@@ -242,7 +250,6 @@ class test_UI(unittest.TestCase):
     def test_MenuChangeGoals(self):
         MonthlyGoals = 888
         Tap.GetToHome(self).click()
-        OldGoals = Menu.GetMenuMonthGoals(self).text
         Menu.GetMenuTrainingGoalsInto(self).click()
         Me.GetMeUserGoalsText(self).click()
         Me.GetMeUserGoalsText(self).clear()
@@ -250,7 +257,7 @@ class test_UI(unittest.TestCase):
         Me.GetMeUserGoalsSave(self).click()
         Me.GetMeUserDetailsBack(self).click()
         NewGoals = Menu.GetMenuMonthGoals(self).text
-        RealGoals = round(float(OldGoals)) - round(float(NewGoals))
+        RealGoals = round(float(MonthlyGoals)) - round(float(NewGoals))
         self.assertEqual(0, RealGoals)
 
     def test_MeChangeGoals(self):
@@ -264,6 +271,7 @@ class test_UI(unittest.TestCase):
         Me.GetMeUserGoalsSave(self).click()
         Me.GetMeUserDetailsBack(self).click()
 
+    @unittest.skip
     def test_SexChange(self):
         Tap.GetToMe(self).click()
         Me.GetMEUserDetailsInfo(self).click()
