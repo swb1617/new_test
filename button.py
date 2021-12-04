@@ -502,45 +502,200 @@ class Data:
         return DataLineNumber
 
     def GetDataLineDistance(self):
-        DataLineDistance = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+        DataLineDistance = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "1]/android.widget.RelativeLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "1]/android.widget.ScrollView["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "2]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/androidx.recyclerview.widget.RecyclerView["
+                                                                       "1]/android.widget.RelativeLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.TextView[1]")
         return DataLineDistance
 
     def GetDataRidingTime(self):
-        DataRidingTime = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+        DataRidingTime = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                     "1]/android.widget.LinearLayout["
+                                                                     "1]/android.widget.FrameLayout["
+                                                                     "1]/android.widget.LinearLayout["
+                                                                     "1]/android.widget.FrameLayout["
+                                                                     "1]/android.widget.FrameLayout["
+                                                                     "1]/android.widget.RelativeLayout["
+                                                                     "1]/android.widget.FrameLayout["
+                                                                     "1]/android.widget.ScrollView["
+                                                                     "1]/android.widget.LinearLayout["
+                                                                     "1]/android.widget.FrameLayout["
+                                                                     "2]/android.widget.LinearLayout["
+                                                                     "1]/android.widget.LinearLayout["
+                                                                     "1]/android.widget.LinearLayout["
+                                                                     "1]/androidx.recyclerview.widget.RecyclerView["
+                                                                     "1]/android.widget.RelativeLayout["
+                                                                     "2]/android.widget.LinearLayout["
+                                                                     "1]/android.widget.LinearLayout["
+                                                                     "1]/android.widget.TextView[1]")
         return DataRidingTime
 
     def GetDataAverageVelocity(self):
-        DataAverageVelocity = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[3]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+        DataAverageVelocity = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                          "1]/android.widget.LinearLayout["
+                                                                          "1]/android.widget.FrameLayout["
+                                                                          "1]/android.widget.LinearLayout["
+                                                                          "1]/android.widget.FrameLayout["
+                                                                          "1]/android.widget.FrameLayout["
+                                                                          "1]/android.widget.RelativeLayout["
+                                                                          "1]/android.widget.FrameLayout["
+                                                                          "1]/android.widget.ScrollView["
+                                                                          "1]/android.widget.LinearLayout["
+                                                                          "1]/android.widget.FrameLayout["
+                                                                          "2]/android.widget.LinearLayout["
+                                                                          "1]/android.widget.LinearLayout["
+                                                                          "1]/android.widget.LinearLayout["
+                                                                          "1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[3]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
         return DataAverageVelocity
 
     def GetDataMaximumSpeed(self):
-        DataMaximumSpeed = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[4]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+        DataMaximumSpeed = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "1]/android.widget.RelativeLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "1]/android.widget.ScrollView["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.FrameLayout["
+                                                                       "2]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/androidx.recyclerview.widget.RecyclerView["
+                                                                       "1]/android.widget.RelativeLayout["
+                                                                       "4]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.LinearLayout["
+                                                                       "1]/android.widget.TextView[1]")
         return DataMaximumSpeed
 
     def GetDataAverageHeartRate(self):
-        DataAverageHeartRate = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[5]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+        DataAverageHeartRate = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                           "1]/android.widget.LinearLayout["
+                                                                           "1]/android.widget.FrameLayout["
+                                                                           "1]/android.widget.LinearLayout["
+                                                                           "1]/android.widget.FrameLayout["
+                                                                           "1]/android.widget.FrameLayout["
+                                                                           "1]/android.widget.RelativeLayout["
+                                                                           "1]/android.widget.FrameLayout["
+                                                                           "1]/android.widget.ScrollView["
+                                                                           "1]/android.widget.LinearLayout["
+                                                                           "1]/android.widget.FrameLayout["
+                                                                           "2]/android.widget.LinearLayout["
+                                                                           "1]/android.widget.LinearLayout["
+                                                                           "1]/android.widget.LinearLayout["
+                                                                           "1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[5]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
         return DataAverageHeartRate
 
     def GetDataAverageStepFrequency(self):
-        DataAverageStepFrequency = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[6]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+        DataAverageStepFrequency = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.FrameLayout["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.FrameLayout["
+                                                                               "1]/android.widget.FrameLayout["
+                                                                               "1]/android.widget.RelativeLayout["
+                                                                               "1]/android.widget.FrameLayout["
+                                                                               "1]/android.widget.ScrollView["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.FrameLayout["
+                                                                               "2]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/androidx.recyclerview.widget"
+                                                                               ".RecyclerView["
+                                                                               "1]/android.widget.RelativeLayout["
+                                                                               "6]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.TextView[1]")
         return DataAverageStepFrequency
 
     def GetDataCalorie(self):
-        DataCalorie = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[14]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+        DataCalorie = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                  "1]/android.widget.LinearLayout["
+                                                                  "1]/android.widget.FrameLayout["
+                                                                  "1]/android.widget.LinearLayout["
+                                                                  "1]/android.widget.FrameLayout["
+                                                                  "1]/android.widget.FrameLayout["
+                                                                  "1]/android.widget.RelativeLayout["
+                                                                  "1]/android.widget.FrameLayout["
+                                                                  "1]/android.widget.ScrollView["
+                                                                  "1]/android.widget.LinearLayout["
+                                                                  "1]/android.widget.FrameLayout["
+                                                                  "2]/android.widget.LinearLayout["
+                                                                  "1]/android.widget.LinearLayout["
+                                                                  "1]/android.widget.LinearLayout["
+                                                                  "1]/androidx.recyclerview.widget.RecyclerView["
+                                                                  "1]/android.widget.RelativeLayout["
+                                                                  "14]/android.widget.LinearLayout["
+                                                                  "1]/android.widget.LinearLayout["
+                                                                  "1]/android.widget.TextView[1]")
         return DataCalorie
 
     def GetDataChartSpeedChart(self):
-        DataChartSpeedChart = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.view.ViewGroup[1]")
+        DataChartSpeedChart = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                          "1]/android.widget.LinearLayout["
+                                                                          "1]/android.widget.FrameLayout["
+                                                                          "1]/android.widget.LinearLayout["
+                                                                          "1]/android.widget.FrameLayout["
+                                                                          "1]/android.widget.FrameLayout["
+                                                                          "1]/android.widget.RelativeLayout["
+                                                                          "1]/android.widget.FrameLayout["
+                                                                          "1]/android.widget.ScrollView["
+                                                                          "1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.view.ViewGroup[1]")
         return DataChartSpeedChart
 
     def GetDataEquipmentModel(self):
-        DataEquipmentModel = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.TextView[1]")
+        DataEquipmentModel = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                         "1]/android.widget.LinearLayout["
+                                                                         "1]/android.widget.FrameLayout["
+                                                                         "1]/android.widget.LinearLayout["
+                                                                         "1]/android.widget.FrameLayout["
+                                                                         "1]/android.widget.FrameLayout["
+                                                                         "1]/android.widget.RelativeLayout["
+                                                                         "1]/android.widget.FrameLayout["
+                                                                         "1]/android.widget.ScrollView["
+                                                                         "1]/android.widget.LinearLayout["
+                                                                         "1]/android.widget.FrameLayout["
+                                                                         "2]/android.widget.LinearLayout["
+                                                                         "1]/android.widget.LinearLayout["
+                                                                         "1]/android.widget.LinearLayout["
+                                                                         "2]/android.widget.TextView[1]")
         return DataEquipmentModel
 
     def GetDataDeviceVersion(self):
-        DataDeviceVersion = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.TextView[2]")
+        DataDeviceVersion = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/android.widget.RelativeLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/android.widget.ScrollView["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "2]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "2]/android.widget.TextView[2]")
         return DataDeviceVersion
-
 
     def GetDataEditText(self):  # 数据修改名字文本框
         DataEditActivity = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
@@ -717,17 +872,55 @@ class Data:
 
 class Activity:
     def GetActivityTotalFrequency(self):
-        ActivityTotalFrequency = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+        ActivityTotalFrequency = self.driver.find_element(by=By.XPATH,
+                                                          value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
         return ActivityTotalFrequency
+
     def GetActivityTotalDuration(self):
-        ActivityTotalDuration = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+        ActivityTotalDuration = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                            "1]/android.widget.LinearLayout["
+                                                                            "1]/android.widget.FrameLayout["
+                                                                            "1]/android.widget.LinearLayout["
+                                                                            "1]/android.widget.FrameLayout["
+                                                                            "1]/android.widget.LinearLayout["
+                                                                            "1]/android.widget.FrameLayout["
+                                                                            "1]/android.widget.LinearLayout["
+                                                                            "1]/android.widget.FrameLayout["
+                                                                            "1]/android.widget.LinearLayout["
+                                                                            "1]/android.widget.LinearLayout["
+                                                                            "2]/android.widget.LinearLayout["
+                                                                            "2]/android.widget.LinearLayout["
+                                                                            "1]/android.widget.TextView[1]")
         return ActivityTotalDuration
+
     def GetActivityTotalAverageVelocity(self):
-        ActivityTotalAverageVelocity = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[3]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+        ActivityTotalAverageVelocity = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                                   "1]/android.widget.LinearLayout["
+                                                                                   "1]/android.widget.FrameLayout["
+                                                                                   "1]/android.widget.LinearLayout["
+                                                                                   "1]/android.widget.FrameLayout["
+                                                                                   "1]/android.widget.LinearLayout["
+                                                                                   "1]/android.widget.FrameLayout["
+                                                                                   "1]/android.widget.LinearLayout["
+                                                                                   "1]/android.widget.FrameLayout["
+                                                                                   "1]/android.widget.LinearLayout["
+                                                                                   "1]/android.widget.LinearLayout["
+                                                                                   "2]/android.widget.LinearLayout["
+                                                                                   "3]/android.widget.LinearLayout["
+                                                                                   "1]/android.widget.TextView[1]")
         return ActivityTotalAverageVelocity
 
     def GetActivityMonthFrequency(self):
-        ActivityMonthFrequency = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.LinearLayout[1]/android.widget.TextView[3]")
+        ActivityMonthFrequency = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                             "1]/android.widget.LinearLayout["
+                                                                             "1]/android.widget.FrameLayout["
+                                                                             "1]/android.widget.LinearLayout["
+                                                                             "1]/android.widget.FrameLayout["
+                                                                             "1]/android.widget.LinearLayout["
+                                                                             "1]/android.widget.FrameLayout["
+                                                                             "1]/android.widget.LinearLayout["
+                                                                             "1]/android.widget.FrameLayout["
+                                                                             "2]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.LinearLayout[1]/android.widget.TextView[3]")
         return ActivityMonthFrequency
 
     def GetActivityTotalDistance(self):  # 活动界面总计里程
@@ -803,40 +996,183 @@ class Activity:
         return ActivityDataStatisicBack
 
     def GetActivityDataStatisicWeek(self):
-        ActivityDataStatisicWeek = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.Button[1]")
+        ActivityDataStatisicWeek = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.FrameLayout["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.FrameLayout["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.ScrollView["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.FrameLayout["
+                                                                               "1]/android.widget.Button[1]")
         return ActivityDataStatisicWeek
 
     def GetActivityDataStatisicMonth(self):
-        ActivityDataStatisicMonth = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[2]/android.widget.Button[1]")
+        ActivityDataStatisicMonth = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                                "1]/android.widget.LinearLayout["
+                                                                                "1]/android.widget.FrameLayout["
+                                                                                "1]/android.widget.LinearLayout["
+                                                                                "1]/android.widget.FrameLayout["
+                                                                                "1]/android.widget.LinearLayout["
+                                                                                "1]/android.widget.ScrollView["
+                                                                                "1]/android.widget.LinearLayout["
+                                                                                "1]/android.widget.LinearLayout["
+                                                                                "1]/android.widget.FrameLayout["
+                                                                                "2]/android.widget.Button[1]")
         return ActivityDataStatisicMonth
 
     def GetActivityDataStatisicYear(self):
-        ActivityDataStatisicYear = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[3]/android.widget.Button[1]")
+        ActivityDataStatisicYear = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.FrameLayout["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.FrameLayout["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.ScrollView["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.LinearLayout["
+                                                                               "1]/android.widget.FrameLayout["
+                                                                               "3]/android.widget.Button[1]")
         return ActivityDataStatisicYear
 
     def GetActivityDataStatisicAll(self):
-        ActivityDataStatisicAll = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[4]/android.widget.Button[1]")
+        ActivityDataStatisicAll = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                              "1]/android.widget.LinearLayout["
+                                                                              "1]/android.widget.FrameLayout["
+                                                                              "1]/android.widget.LinearLayout["
+                                                                              "1]/android.widget.FrameLayout["
+                                                                              "1]/android.widget.LinearLayout["
+                                                                              "1]/android.widget.ScrollView["
+                                                                              "1]/android.widget.LinearLayout["
+                                                                              "1]/android.widget.LinearLayout["
+                                                                              "1]/android.widget.FrameLayout["
+                                                                              "4]/android.widget.Button[1]")
         return ActivityDataStatisicAll
 
     def GetActivityDataStatisicAllDistances(self):
-        ActivityDataStatisicAllDistances = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[3]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+        ActivityDataStatisicAllDistances = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                                       "1]/android.widget"
+                                                                                       ".LinearLayout["
+                                                                                       "1]/android.widget"
+                                                                                       ".FrameLayout["
+                                                                                       "1]/android.widget"
+                                                                                       ".LinearLayout["
+                                                                                       "1]/android.widget"
+                                                                                       ".FrameLayout["
+                                                                                       "1]/android.widget"
+                                                                                       ".LinearLayout["
+                                                                                       "1]/android.widget.ScrollView["
+                                                                                       "1]/android.widget"
+                                                                                       ".LinearLayout["
+                                                                                       "1]/android.widget"
+                                                                                       ".LinearLayout["
+                                                                                       "3]/android.widget"
+                                                                                       ".LinearLayout["
+                                                                                       "1]/android.widget.TextView[1]")
         return ActivityDataStatisicAllDistances
 
     def GetActivityDataStatisicAllFrequency(self):
-        ActivityDataStatisicAllFrequency = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[3]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.TextView[2]")
+        ActivityDataStatisicAllFrequency = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                                       "1]/android.widget"
+                                                                                       ".LinearLayout["
+                                                                                       "1]/android.widget"
+                                                                                       ".FrameLayout["
+                                                                                       "1]/android.widget"
+                                                                                       ".LinearLayout["
+                                                                                       "1]/android.widget"
+                                                                                       ".FrameLayout["
+                                                                                       "1]/android.widget"
+                                                                                       ".LinearLayout["
+                                                                                       "1]/android.widget.ScrollView["
+                                                                                       "1]/android.widget"
+                                                                                       ".LinearLayout["
+                                                                                       "1]/android.widget"
+                                                                                       ".LinearLayout["
+                                                                                       "3]/android.widget"
+                                                                                       ".LinearLayout["
+                                                                                       "2]/android.widget"
+                                                                                       ".LinearLayout["
+                                                                                       "1]/android.widget.TextView[2]")
         return ActivityDataStatisicAllFrequency
 
     def GetActivityDataStatisicAllDuration(self):
-        ActivityDataStatisicAllDuration = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[3]/android.widget.LinearLayout[2]/android.widget.LinearLayout[2]/android.widget.TextView[2]")
+        ActivityDataStatisicAllDuration = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                                      "1]/android.widget"
+                                                                                      ".LinearLayout["
+                                                                                      "1]/android.widget.FrameLayout["
+                                                                                      "1]/android.widget"
+                                                                                      ".LinearLayout["
+                                                                                      "1]/android.widget.FrameLayout["
+                                                                                      "1]/android.widget"
+                                                                                      ".LinearLayout["
+                                                                                      "1]/android.widget.ScrollView["
+                                                                                      "1]/android.widget"
+                                                                                      ".LinearLayout["
+                                                                                      "1]/android.widget"
+                                                                                      ".LinearLayout["
+                                                                                      "3]/android.widget"
+                                                                                      ".LinearLayout["
+                                                                                      "2]/android.widget"
+                                                                                      ".LinearLayout["
+                                                                                      "2]/android.widget.TextView[2]")
         return ActivityDataStatisicAllDuration
 
     def GetActivityDataStatisicAllAverageVelocity(self):
-        ActivityDataStatisicAllAverageVelocity = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[3]/android.widget.LinearLayout[2]/android.widget.LinearLayout[3]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+        ActivityDataStatisicAllAverageVelocity = self.driver.find_element(by=By.XPATH, value="//android.widget"
+                                                                                             ".FrameLayout["
+                                                                                             "1]/android.widget"
+                                                                                             ".LinearLayout["
+                                                                                             "1]/android.widget"
+                                                                                             ".FrameLayout["
+                                                                                             "1]/android.widget"
+                                                                                             ".LinearLayout["
+                                                                                             "1]/android.widget"
+                                                                                             ".FrameLayout["
+                                                                                             "1]/android.widget"
+                                                                                             ".LinearLayout["
+                                                                                             "1]/android.widget"
+                                                                                             ".ScrollView["
+                                                                                             "1]/android.widget"
+                                                                                             ".LinearLayout["
+                                                                                             "1]/android.widget"
+                                                                                             ".LinearLayout["
+                                                                                             "3]/android.widget"
+                                                                                             ".LinearLayout["
+                                                                                             "2]/android.widget"
+                                                                                             ".LinearLayout["
+                                                                                             "3]/android.widget"
+                                                                                             ".LinearLayout["
+                                                                                             "1]/android.widget.TextView[1]")
         return ActivityDataStatisicAllAverageVelocity
-    def GetActivityDataStatisicMonthFrequency(self):
-        ActivityDataStatisicMonthFrequency = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[3]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.TextView[2]")
-        return ActivityDataStatisicMonthFrequency
 
+    def GetActivityDataStatisicMonthFrequency(self):
+        ActivityDataStatisicMonthFrequency = self.driver.find_element(by=By.XPATH, value="//android.widget"
+                                                                                         ".FrameLayout["
+                                                                                         "1]/android.widget"
+                                                                                         ".LinearLayout["
+                                                                                         "1]/android.widget"
+                                                                                         ".FrameLayout["
+                                                                                         "1]/android.widget"
+                                                                                         ".LinearLayout["
+                                                                                         "1]/android.widget"
+                                                                                         ".FrameLayout["
+                                                                                         "1]/android.widget"
+                                                                                         ".LinearLayout["
+                                                                                         "1]/android.widget"
+                                                                                         ".ScrollView["
+                                                                                         "1]/android.widget"
+                                                                                         ".LinearLayout["
+                                                                                         "1]/android.widget"
+                                                                                         ".LinearLayout["
+                                                                                         "3]/android.widget"
+                                                                                         ".LinearLayout["
+                                                                                         "2]/android.widget"
+                                                                                         ".LinearLayout["
+                                                                                         "1]/android.widget.TextView["
+                                                                                         "2]")
+        return ActivityDataStatisicMonthFrequency
 
     def GetActivityPersonalRecordsInfo(self):  # 活动界面个人记录入口
         ActivityPersonalRecordsInfo = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
