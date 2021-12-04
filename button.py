@@ -8,18 +8,28 @@ class Menu:
         MenuTitle = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
                                                                 "1]/android.widget.LinearLayout["
                                                                 "1]/android.widget.FrameLayout[ "
-                                                                "1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout["
-                                                                "1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout["
-                                                                "1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]")
+                                                                "1]/android.widget.LinearLayout["
+                                                                "1]/android.widget.FrameLayout["
+                                                                "1]/android.widget.LinearLayout[ "
+                                                                "1]/android.widget.FrameLayout["
+                                                                "1]/android.widget.LinearLayout["
+                                                                "1]/android.widget.FrameLayout[ "
+                                                                "1]/android.widget.RelativeLayout["
+                                                                "1]/android.widget.TextView[1]")
         return MenuTitle
 
     def GetMenuMessageInto(self):  # 首页消息按钮
         MessageInto = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
                                                                   "1]/android.widget.LinearLayout["
                                                                   "1]/android.widget.FrameLayout[ "
-                                                                  "1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout["
-                                                                  "1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout["
-                                                                  "1]/android.widget.RelativeLayout[1]/android.view.ViewGroup[1]")
+                                                                  "1]/android.widget.LinearLayout["
+                                                                  "1]/android.widget.FrameLayout["
+                                                                  "1]/android.widget.LinearLayout[ "
+                                                                  "1]/android.widget.FrameLayout["
+                                                                  "1]/android.widget.LinearLayout["
+                                                                  "1]/android.widget.FrameLayout[ "
+                                                                  "1]/android.widget.RelativeLayout["
+                                                                  "1]/android.view.ViewGroup[1]")
         return MessageInto
 
     def GetMenuFriendInto(self):  # 首页好友按钮
@@ -420,8 +430,13 @@ class Data:
         return DataMapStyleSave
 
     def GetDataMapStyleGoals(self):  # 公里点打开关闭按钮
-        DataMapStyleGoals = self.driver.find_element(by=By.XPATH,
-                                                     value="//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Switch[1]")
+        DataMapStyleGoals = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.LinearLayout[1]/android.widget.Switch["
+                                                                        "1]")
         return DataMapStyleGoals
 
     def GetDataMenuToEditActivity(self):  # 修改活动名称
@@ -560,7 +575,12 @@ class Data:
                                                                           "2]/android.widget.LinearLayout["
                                                                           "1]/android.widget.LinearLayout["
                                                                           "1]/android.widget.LinearLayout["
-                                                                          "1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[3]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+                                                                          "1]/androidx.recyclerview.widget"
+                                                                          ".RecyclerView["
+                                                                          "1]/android.widget.RelativeLayout["
+                                                                          "3]/android.widget.LinearLayout["
+                                                                          "1]/android.widget.LinearLayout["
+                                                                          "1]/android.widget.TextView[1]")
         return DataAverageVelocity
 
     def GetDataMaximumSpeed(self):
@@ -600,7 +620,12 @@ class Data:
                                                                            "2]/android.widget.LinearLayout["
                                                                            "1]/android.widget.LinearLayout["
                                                                            "1]/android.widget.LinearLayout["
-                                                                           "1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[5]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+                                                                           "1]/androidx.recyclerview.widget"
+                                                                           ".RecyclerView["
+                                                                           "1]/android.widget.RelativeLayout["
+                                                                           "5]/android.widget.LinearLayout["
+                                                                           "1]/android.widget.LinearLayout["
+                                                                           "1]/android.widget.TextView[1]")
         return DataAverageHeartRate
 
     def GetDataAverageStepFrequency(self):
@@ -658,7 +683,11 @@ class Data:
                                                                           "1]/android.widget.RelativeLayout["
                                                                           "1]/android.widget.FrameLayout["
                                                                           "1]/android.widget.ScrollView["
-                                                                          "1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.view.ViewGroup[1]")
+                                                                          "1]/androidx.recyclerview.widget"
+                                                                          ".RecyclerView["
+                                                                          "1]/android.widget.LinearLayout["
+                                                                          "1]/android.widget.LinearLayout["
+                                                                          "2]/android.view.ViewGroup[1]")
         return DataChartSpeedChart
 
     def GetDataEquipmentModel(self):
@@ -784,7 +813,10 @@ class Data:
                                                                          "1]/android.widget.LinearLayout["
                                                                          "1]/android.widget.FrameLayout["
                                                                          "1]/android.widget.LinearLayout["
-                                                                         "1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]")
+                                                                         "1]/androidx.recyclerview.widget"
+                                                                         ".RecyclerView["
+                                                                         "1]/android.widget.RelativeLayout["
+                                                                         "1]/android.widget.TextView[1]")
         return DataSendFriendName
 
     def GetDataExportDataBack(self):  # 数据导出返回
@@ -872,8 +904,20 @@ class Data:
 
 class Activity:
     def GetActivityTotalFrequency(self):
-        ActivityTotalFrequency = self.driver.find_element(by=By.XPATH,
-                                                          value="//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]")
+        ActivityTotalFrequency = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                             "1]/android.widget.LinearLayout["
+                                                                             "1]/android.widget.FrameLayout["
+                                                                             "1]/android.widget.LinearLayout["
+                                                                             "1]/android.widget.FrameLayout["
+                                                                             "1]/android.widget.LinearLayout["
+                                                                             "1]/android.widget.FrameLayout["
+                                                                             "1]/android.widget.LinearLayout["
+                                                                             "1]/android.widget.FrameLayout["
+                                                                             "1]/android.widget.LinearLayout["
+                                                                             "1]/android.widget.LinearLayout["
+                                                                             "2]/android.widget.LinearLayout["
+                                                                             "1]/android.widget.LinearLayout["
+                                                                             "1]/android.widget.TextView[1]")
         return ActivityTotalFrequency
 
     def GetActivityTotalDuration(self):
@@ -920,7 +964,10 @@ class Activity:
                                                                              "1]/android.widget.FrameLayout["
                                                                              "1]/android.widget.LinearLayout["
                                                                              "1]/android.widget.FrameLayout["
-                                                                             "2]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.LinearLayout[1]/android.widget.TextView[3]")
+                                                                             "2]/androidx.recyclerview.widget"
+                                                                             ".RecyclerView["
+                                                                             "1]/android.widget.LinearLayout["
+                                                                             "1]/android.widget.TextView[3]")
         return ActivityMonthFrequency
 
     def GetActivityTotalDistance(self):  # 活动界面总计里程
@@ -1144,7 +1191,8 @@ class Activity:
                                                                                              ".LinearLayout["
                                                                                              "3]/android.widget"
                                                                                              ".LinearLayout["
-                                                                                             "1]/android.widget.TextView[1]")
+                                                                                             "1]/android.widget"
+                                                                                             ".TextView[1]")
         return ActivityDataStatisicAllAverageVelocity
 
     def GetActivityDataStatisicMonthFrequency(self):
@@ -1732,7 +1780,10 @@ class Me:
                                                                            "1]/android.widget.LinearLayout["
                                                                            "1]/android.widget.ScrollView["
                                                                            "1]/android.widget.LinearLayout["
-                                                                           "1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[1]")
+                                                                           "1]/androidx.recyclerview.widget"
+                                                                           ".RecyclerView["
+                                                                           "1]/android.widget.RelativeLayout["
+                                                                           "1]/android.widget.ImageView[1]")
         return MeFeddbackPictureAdd
 
     def GetMeFeedBackPictureChoose(self):
@@ -1742,7 +1793,10 @@ class Me:
                                                                               "1]/android.widget.LinearLayout["
                                                                               "1]/android.widget.FrameLayout["
                                                                               "1]/android.widget.RelativeLayout["
-                                                                              "1]/androidx.recyclerview.widget.RecyclerView[1]/android.widget.RelativeLayout[2]/android.widget.TextView[1]")
+                                                                              "1]/androidx.recyclerview.widget"
+                                                                              ".RecyclerView["
+                                                                              "1]/android.widget.RelativeLayout["
+                                                                              "2]/android.widget.TextView[1]")
         return MeFeedBackPictureChoose
 
     def GetMeFeedBackPictureSave(self):
@@ -1827,77 +1881,82 @@ class Me:
 
 class ComposeTest:
     def GetDeviceRoutesAdd(self):
-        DeviceRoutesAdd = self.driver.find_element(by=By.XPATH,
-                                                   value="//android.widget.FrameLayout["
-                                                         "1]/android.widget.LinearLayout["
-                                                         "1]/android.widget.FrameLayout["
-                                                         "1]/android.widget.LinearLayout["
-                                                         "1]/android.widget.FrameLayout["
-                                                         "1]/android.widget.LinearLayout["
-                                                         "1]/android.widget.FrameLayout["
-                                                         "1]/android.widget.LinearLayout["
-                                                         "1]/android.widget.ScrollView["
-                                                         "1]/android.widget.LinearLayout["
-                                                         "1]/androidx.recyclerview.widget.RecyclerView["
-                                                         "1]/android.widget.LinearLayout[4]")
+        DeviceRoutesAdd = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                      "1]/android.widget.LinearLayout["
+                                                                      "1]/android.widget.FrameLayout["
+                                                                      "1]/android.widget.LinearLayout["
+                                                                      "1]/android.widget.FrameLayout["
+                                                                      "1]/android.widget.LinearLayout["
+                                                                      "1]/android.widget.FrameLayout["
+                                                                      "1]/android.widget.LinearLayout["
+                                                                      "1]/android.widget.ScrollView["
+                                                                      "1]/android.widget.LinearLayout["
+                                                                      "1]/androidx.recyclerview.widget.RecyclerView["
+                                                                      "1]/android.widget.LinearLayout[4]")
         return DeviceRoutesAdd
 
     def GetDeviceCreateRoutes(self):
-        DeviceCreateRoutes = self.driver.find_element(by=By.XPATH,
-                                                      value="//android.widget.FrameLayout["
-                                                            "1]/android.widget.LinearLayout["
-                                                            "1]/android.widget.FrameLayout["
-                                                            "1]/android.widget.LinearLayout["
-                                                            "1]/android.widget.FrameLayout["
-                                                            "1]/androidx.compose.ui.platform.ComposeView["
-                                                            "1]/android.view.View[1]/android.view.View["
-                                                            "2]/android.view.View[1]")
+        DeviceCreateRoutes = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                         "1]/android.widget.LinearLayout["
+                                                                         "1]/android.widget.FrameLayout["
+                                                                         "1]/android.widget.LinearLayout["
+                                                                         "1]/android.widget.FrameLayout["
+                                                                         "1]/androidx.compose.ui.platform.ComposeView["
+                                                                         "1]/android.view.View[1]/android.view.View["
+                                                                         "2]/android.view.View[1]")
         return DeviceCreateRoutes
 
     def GetDeviceFirstRoutes(self):
-        DeviceFirstRoutes = self.driver.find_element(by=By.XPATH,
-                                                     value="//android.widget.FrameLayout["
-                                                           "1]/android.widget.LinearLayout["
-                                                           "1]/android.widget.FrameLayout["
-                                                           "1]/android.widget.LinearLayout["
-                                                           "1]/android.widget.FrameLayout["
-                                                           "1]/androidx.compose.ui.platform.ComposeView["
-                                                           "1]/android.view.View[1]/android.view.View["
-                                                           "4]/android.view.View[1]/android.view.View["
-                                                           "1]/android.view.View[1]")
+        DeviceFirstRoutes = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/android.widget.LinearLayout["
+                                                                        "1]/android.widget.FrameLayout["
+                                                                        "1]/androidx.compose.ui.platform.ComposeView["
+                                                                        "1]/android.view.View[1]/android.view.View["
+                                                                        "4]/android.view.View[1]/android.view.View["
+                                                                        "1]/android.view.View[1]")
         return DeviceFirstRoutes
 
 
 class ErrorHappen:
     def GetDataNetError(self):
-        DataNetError = self.driver.find_element(by=By.XPATH,
-                                                value="//android.widget.FrameLayout[1]/android.widget.LinearLayout["
-                                                      "1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]")
+        DataNetError = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                   "1]/android.widget.LinearLayout[ "
+                                                                   "1]/android.widget.FrameLayout["
+                                                                   "1]/android.widget.FrameLayout[1]")
         return DataNetError
 
     def GetDataNetErrorOk(self):
-        DataNetErrorOk = self.driver.find_element(by=By.XPATH,
-                                                  value="//android.widget.FrameLayout[1]/android.widget.LinearLayout["
-                                                        "1]/android.widget.FrameLayout[1]/android.widget.FrameLayout["
-                                                        "1]/android.view.ViewGroup[1]/android.widget.Button[1]")
+        DataNetErrorOk = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                     "1]/android.widget.LinearLayout[ "
+                                                                     "1]/android.widget.FrameLayout["
+                                                                     "1]/android.widget.FrameLayout[ "
+                                                                     "1]/android.view.ViewGroup["
+                                                                     "1]/android.widget.Button[1]")
         return DataNetErrorOk
 
     def GetDataError(self):
-        DataError = self.driver.find_element(by=By.XPATH,
-                                             value="//android.widget.FrameLayout[1]/android.widget.LinearLayout["
-                                                   "1]/android.widget.FrameLayout[1]/android.widget.LinearLayout["
-                                                   "1]/android.widget.FrameLayout[1]/android.widget.FrameLayout["
-                                                   "1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout["
-                                                   "1]/android.widget.ScrollView[2]/android.widget.LinearLayout["
-                                                   "1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]")
+        DataError = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                "1]/android.widget.LinearLayout[ "
+                                                                "1]/android.widget.FrameLayout["
+                                                                "1]/android.widget.LinearLayout[ "
+                                                                "1]/android.widget.FrameLayout["
+                                                                "1]/android.widget.FrameLayout[ "
+                                                                "1]/android.widget.RelativeLayout["
+                                                                "1]/android.widget.FrameLayout[ "
+                                                                "1]/android.widget.ScrollView["
+                                                                "2]/android.widget.LinearLayout[ "
+                                                                "1]/android.widget.LinearLayout["
+                                                                "1]/android.widget.LinearLayout[1]")
         return DataError
 
     def GetDataErrorLayout(self):
-        DataErrorLayout = self.driver.find_element(by=By.XPATH,
-                                                   value="//android.widget.FrameLayout[1]/android.widget.FrameLayout["
-                                                         "1]/android.widget.FrameLayout["
-                                                         "1]/android.widget.FrameLayout["
-                                                         "1]/android.widget.LinearLayout[1]")
+        DataErrorLayout = self.driver.find_element(by=By.XPATH, value="//android.widget.FrameLayout["
+                                                                      "1]/android.widget.FrameLayout[ "
+                                                                      "1]/android.widget.FrameLayout["
+                                                                      "1]/android.widget.FrameLayout["
+                                                                      "1]/android.widget.LinearLayout[1]")
         return DataErrorLayout
 
     def GetDataErrorFeedBack(self):
