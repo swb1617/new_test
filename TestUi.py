@@ -30,7 +30,7 @@ class test_UI(unittest.TestCase):
             'noReset': True,
             'newCommandTimeout': 6000,
             # 更换底层驱动
-            # 'automationName': 'UiAutomator2',
+            'automationName': 'UiAutomator2',
             'unicodeKeyboard': True,  # 修改手机的输入法
             'resetKeyboard': True
         }
