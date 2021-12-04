@@ -30,7 +30,7 @@ class test_UI(unittest.TestCase):
             'noReset': True,
             'newCommandTimeout': 6000,
             # 更换底层驱动
-            'automationName': 'UiAutomator2',
+            # 'automationName': 'UiAutomator2',
             'unicodeKeyboard': True,  # 修改手机的输入法
             'resetKeyboard': True
         }
@@ -63,7 +63,7 @@ class test_UI(unittest.TestCase):
         time.sleep(2)
         self.driver.swipe(x1, y1, x2, y2, 1000)  # 滑动方法
 
-    def GetToast(self,toast_message):
+    def GetToast(self, toast_message):
         message = '//*[@text=\'{}\']'.format(toast_message)
         toast_element = WebDriverWait(self.driver, 5).until(lambda x: x.find_element(by=By.XPATH, value=message))
         # print(toast_element.text)
@@ -319,6 +319,45 @@ class test_UI(unittest.TestCase):
         Me.GetMeNotification(self).click()
         time.sleep(3)
         Me.GetMeNotificationBack(self).click()
+
+    def test_AccumulatedMileageConsistency(self):
+        Tap.GetToActivity(self).click()
+        ActivityDistance = Activity.GetActivityTotalDistance(self).text
+        Activity.GetActivityDataStatisicInfo(self).click()
+        Activity.GetActivityDataStatisicAll(self).click()
+        ActivityDistances = Activity.GetActivityDataStatisicAllDistances(self).text
+        Activity.GetActivityDataStatisicBack(self).click()
+        self.assertEqual(ActivityDistance, ActivityDistances)
+
+    def test_CumulativeTimesConsistency(self):
+        Tap.GetToActivity(self).click()
+        ActivityFrequency = Activity.GetActivityTotalFrequency(self).text
+        Activity.GetActivityDataStatisicInfo(self).click()
+        Activity.GetActivityDataStatisicAll(self).click()
+        ActivityFrequencys = Activity.GetActivityDataStatisicAllFrequency(self).text
+        Activity.GetActivityDataStatisicBack(self).click()
+        self.assertEqual(ActivityFrequencys, ActivityFrequency)
+
+    def test_AverageVelocityConsistency(self):
+        Tap.GetToActivity(self).click()
+        ActivityAverageVelocity = Activity.GetActivityTotalAverageVelocity(self).text
+        Activity.GetActivityDataStatisicInfo(self).click()
+        Activity.GetActivityDataStatisicAll(self).click()
+        ActivityAverageVelocitys = Activity.GetActivityDataStatisicAllAverageVelocity(self).text
+        Activity.GetActivityDataStatisicBack(self).click()
+        self.assertIn(ActivityAverageVelocity, ActivityAverageVelocitys)
+
+    @unittest.skip("需含有当月骑行记录")
+    def test_MonthlyCyclingTimes(self):
+        Tap.GetToActivity(self).click()
+        ActivityMonthFrequency = Activity.GetActivityMonthFrequency(self).text
+        Activity.GetActivityDataStatisicInfo(self).click()
+        time.sleep(1)
+        Activity.GetActivityDataStatisicMonth(self).click()
+        time.sleep(2)
+        ActivityDataStatisicMonthFrequency = Activity.GetActivityDataStatisicMonthFrequency(self).text
+        Activity.GetActivityDataStatisicBack(self).click()
+        self.assertEqual(ActivityDataStatisicMonthFrequency, ActivityMonthFrequency)
 
 
 if __name__ == '__main__':
